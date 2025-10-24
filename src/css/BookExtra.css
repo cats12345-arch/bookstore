@@ -1,0 +1,16 @@
+#book-extra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#book-extra a {
+    text-decoration: none;
+    
+}
+
+@media only screen and (min-width: 768px) {
+    #book-extra {
+        width: 28%;
+    }
+}

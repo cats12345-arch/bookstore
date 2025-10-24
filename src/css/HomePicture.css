@@ -1,0 +1,27 @@
+#home-picture p {
+    font-size: 24px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+img {
+    max-height: 600px;
+    width: 2400px;
+    max-width: 100%;
+}
+
+#home-picture {
+    position: relative;
+    margin: 0 auto;
+}
+
+.absolute {
+    position: absolute;
+    margin: auto;
+    bottom: 8%;
+    padding-left: 10%;
+    padding-right: 3%;
+    background: white;
+}

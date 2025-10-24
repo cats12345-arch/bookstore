@@ -1,0 +1,17 @@
+#home-info div {
+    margin: 15px;
+}
+
+#home-info h2 {
+    font-size: 32px;
+}
+
+#home-info p {
+    font-size: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+    #home-info {
+        display: flex;
+    }
+}

@@ -7,6 +7,8 @@ import Browse from './pages/Browse';
 import HotBooks from './pages/HotBooks';
 import Search from './pages/Search';
 import About from './pages/About';
+import Contact from './pages/Contact';
+import AdminTools from './pages/AdminTools';
 
 export default function App() {
   return (
@@ -18,6 +20,8 @@ export default function App() {
           <Route path="hotBooks" element={<HotBooks />}/>
           <Route path="search" element={<Search />}/>
           <Route path="about" element={<About />}/>
+          <Route path="contact" element={<Contact />}/>
+          <Route path="admin" element={<AdminTools />}/>
         </Route>
       </Routes>
     </BrowserRouter>

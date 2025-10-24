@@ -1,0 +1,31 @@
+#weekly-bookclub {
+    border: 3px solid #a75502;
+}
+
+#weekly-bookclub div {
+    padding: 12px
+}
+
+#weekly-bookclub h2 {
+    font-size: 32px;
+}
+
+#weekly-bookclub p {
+    font-size: 24px;
+}
+
+#weekly-bookclub-img {
+    max-width: 50%;
+}
+
+#weekly-bookclub-img img {
+    max-width: 100%;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    #weekly-bookclub {
+        display: flex;
+    }
+}
