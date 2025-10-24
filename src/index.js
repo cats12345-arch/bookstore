@@ -1,10 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import Layout from './Layout';
+import Home from './pages/Home';
+import Browse from './pages/Browse';
+import HotBooks from './pages/HotBooks';
+import Search from './pages/Search';
+import About from './pages/About';
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />}/>
+          <Route path="browse" element={<Browse />}/>
+          <Route path="hotBooks" element={<HotBooks />}/>
+          <Route path="search" element={<Search />}/>
+          <Route path="about" element={<About />}/>
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  )
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <h1>Hello World</h1>
+    <App />
   </React.StrictMode>
 );

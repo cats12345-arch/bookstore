@@ -1,0 +1,28 @@
+#nav-items li {
+    list-style-type: none;
+    font-size: 20px;
+    margin: 4px;
+}
+
+#nav-items {
+    margin: 0 auto;
+}
+#nav-items li a {
+    text-decoration: none;
+    color: black;
+}
+
+@media only screen and (min-width: 769px) {
+    li {
+        padding-right: 15px;
+    }
+
+    #nav-items {
+        display: flex;
+    }
+
+    #main-nav {
+        display: flex;
+        align-items: center;
+    }
+}
