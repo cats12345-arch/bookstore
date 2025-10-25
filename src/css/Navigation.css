@@ -2,6 +2,11 @@
     list-style-type: none;
     font-size: 20px;
     margin: 4px;
+    background: #8FB1EF;
+}
+
+#nav-items {
+    text-align: center;
 }
 
 #nav-items {
@@ -24,5 +29,9 @@
     #main-nav {
         display: flex;
         align-items: center;
+    }
+
+    #nav-items li {
+        background: #fcfcf3;
     }
 }

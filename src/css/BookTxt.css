@@ -1,0 +1,12 @@
+#book-txt p {
+    font-size: 24px;
+    padding-left: 12px;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 768px ) {
+    #book-txt {
+        width: 48%;
+        align-items: center;
+    }
+}

@@ -1,9 +1,12 @@
 import "./../css/Book.css";
+import BookImg from "./../componets/BookImg";
+import BookTxt from "../componets/BookTxt";
 
 const Book = () => {
     return (
-        <div>
-            <h1>Book</h1>
+        <div id="book">
+            <BookImg />
+            <BookTxt />
         </div>
     );
 };

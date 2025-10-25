@@ -1,0 +1,13 @@
+#book-img img {
+    display: block;
+    max-width: 100%;
+    width: 50%;
+    margin: auto;
+}
+
+@media only screen and (min-width: 768px ) {
+    #book-img {
+        width: 48%;
+        align-items: center;
+    }
+}

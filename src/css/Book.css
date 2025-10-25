@@ -1,0 +1,10 @@
+#book {
+    margin: auto;
+}
+
+@media only screen and (min-width: 768px ) {
+    #book {
+        display: flex;
+        align-items: center;
+    }
+}
