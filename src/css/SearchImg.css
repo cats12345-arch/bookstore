@@ -1,0 +1,14 @@
+#search-img {
+    display: none;
+}
+
+#search-img img {
+    max-width: 100%;
+    padding-top: 30px;
+}
+
+@media only screen and (min-width:768px ) {
+    #search-img {
+        display: block;
+    }
+}

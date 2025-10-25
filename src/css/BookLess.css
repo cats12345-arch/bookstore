@@ -1,0 +1,27 @@
+#book-less {
+    margin: 0px auto;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#book-less a {
+    text-decoration: none;
+    color: black;
+}
+
+#book-less img {
+    width: 100%;
+    height: 30%;
+}
+
+#book-less h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#book-less p {
+    font-size: 24px;
+}
+

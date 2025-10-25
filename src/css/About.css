@@ -1,0 +1,21 @@
+#about {
+    width: 90%;
+    margin: auto;
+}
+
+#about-gallery {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3%;
+}
+
+.about-header {
+    text-align: center;
+    font-size: 32px;
+}
+
+@media only screen and (min-width: 768px) {
+    #about-gallery {
+        display: flex;
+    }
+}

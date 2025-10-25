@@ -1,0 +1,35 @@
+#about-img {
+    margin-top: 12px;
+}
+
+#about-img p {
+    font-size: 24px;
+    text-align: left;
+}
+
+#about-relative {
+    position: relative;
+    margin: 0px auto;
+}
+
+#about-relative img {
+    height: 600px;
+    margin: auto;
+    max-width: 100%;
+    display: block;
+}
+
+#about-absolute {
+    position: absolute;
+    bottom: 3%;
+    padding-left: 10%;
+    padding-right: 3%;
+    background: rgb(255, 255, 255, .6);
+}
+
+@media only screen and (min-width:768px ) {
+    #about-img {
+        width: 30%;
+        align-items: center;
+    }
+}

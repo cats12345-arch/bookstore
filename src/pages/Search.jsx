@@ -1,9 +1,12 @@
 import "./../css/Search.css";
+import SearchForm from "./../componets/SearchForm";
+import SearchImg from "./../componets/SearchImg";
 
 const Search = () => {
     return (
         <div id="search">
-            <h1>Search</h1>
+            <SearchForm />
+            <SearchImg />
         </div>
     );
 };
