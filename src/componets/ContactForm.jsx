@@ -17,12 +17,12 @@ const ContactForm = () => {
                     <label for="name">Message:</label>
                     <textarea class="block" name="message" required></textarea>
                 </p>
-                <input type="checkbox" name="botcheck" class="hidden" style="display: none;" />
+                <input type="checkbox" name="botcheck" class="hidden" style={{display: "none"}} />
                 <button type="submit">Submit Form</button>
                 <div id="contact-result"></div>
             </form>
         </div>
-    )
-}
+    );
+};
 
 export default ContactForm;

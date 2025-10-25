@@ -1,9 +1,11 @@
 import "./../css/AdminTools.css";
+import AdminToolsForm from "./../componets/AdminToolsForm";
 
 const AdminTools = () => {
     return (
-        <div>
-            <h1>AdminTools</h1>
+        <div id="admin-tools">
+            <h1>Admin Tools</h1>
+            <AdminToolsForm />
         </div>
     );
 };
