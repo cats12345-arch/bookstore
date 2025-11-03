@@ -7,11 +7,13 @@
 
 #nav-items {
     text-align: center;
+    padding: 0;
 }
 
 #nav-items {
     margin: 0 auto;
 }
+
 #nav-items li a {
     text-decoration: none;
     color: black;

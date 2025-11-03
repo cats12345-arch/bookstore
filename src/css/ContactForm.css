@@ -1,8 +1,32 @@
 #contact-form {
-    width: 48%;
     align-items: center;
 }
 
 #contact-form {
     font-size: 24px;
+}
+
+#contact-form input {
+    height: 35px;
+    width: 60%;
+}
+
+#contact-form textarea {
+    height: 150px;
+    width: 60%;
+}
+
+@media only screen and (min-width: 768px) {
+    #contact-form input {
+        width: 50%;
+    }
+
+    #contact-form {
+        width: 48%;
+        align-items: center;
+    }
+
+    #contact-form textarea {
+        width: 50%;
+    }
 }

@@ -1,0 +1,19 @@
+#toggle-nav {
+    margin: 0 auto;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+#toggle-nav div {
+    width: 35px;
+    height: 5px;
+    background-color: #587F86;
+    margin: 6px auto;
+}
+
+@media only screen and (min-width: 769px ) {
+    #toggle-nav {
+        display: none;
+    }
+}

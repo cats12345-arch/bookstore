@@ -2,6 +2,7 @@ import "./../css/Navigation.css";
 import {Link} from "react-router-dom";
 
 const Navigation = () => {
+    
     return (
         <div id="main-nav">
             <ul id="nav-items">
