@@ -1,20 +1,25 @@
 {
   "files": {
-    "main.css": "/bookstore/static/css/main.94b97089.css",
-    "main.js": "/bookstore/static/js/main.e083c7fe.js",
+    "main.css": "/bookstore/static/css/main.f5a3cbd7.css",
+    "main.js": "/bookstore/static/js/main.300e1637.js",
     "static/media/homeBanner.jpg": "/bookstore/static/media/homeBanner.68b8831b871ba5a94e62.jpg",
     "static/media/woman.jpg": "/bookstore/static/media/woman.f12de2283f2dedc82103.jpg",
     "static/media/bookClub.jpg": "/bookstore/static/media/bookClub.0f8d36ef8607d98e4713.jpg",
     "static/media/crying.jpg": "/bookstore/static/media/crying.4edaea2472078cff46f1.jpg",
     "static/media/courtAndThorn.jpg": "/bookstore/static/media/courtAndThorn.4ac99a9cba50b16d8e8f.jpg",
+    "static/media/book2.jpg": "/bookstore/static/media/book2.669c9dfb0ff394215327.jpg",
+    "static/media/book4.jpg": "/bookstore/static/media/book4.d539fcfc6df6542da62c.jpg",
     "static/media/Thelord.jpg": "/bookstore/static/media/Thelord.920c49897333da526095.jpg",
+    "static/media/book5.jpg": "/bookstore/static/media/book5.802183452566f8b13052.jpg",
+    "static/media/book1.jpg": "/bookstore/static/media/book1.79fd68c1967d67eedc7b.jpg",
+    "static/media/book3.jpg": "/bookstore/static/media/book3.b2173a98b531f41b4324.jpg",
     "static/media/bookStore.webp": "/bookstore/static/media/bookStore.643320f58edc8307c751.webp",
     "index.html": "/bookstore/index.html",
-    "main.94b97089.css.map": "/bookstore/static/css/main.94b97089.css.map",
-    "main.e083c7fe.js.map": "/bookstore/static/js/main.e083c7fe.js.map"
+    "main.f5a3cbd7.css.map": "/bookstore/static/css/main.f5a3cbd7.css.map",
+    "main.300e1637.js.map": "/bookstore/static/js/main.300e1637.js.map"
   },
   "entrypoints": [
-    "static/css/main.94b97089.css",
-    "static/js/main.e083c7fe.js"
+    "static/css/main.f5a3cbd7.css",
+    "static/js/main.300e1637.js"
   ]
 }
