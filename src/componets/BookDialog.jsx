@@ -13,7 +13,7 @@ const BookDialog = (props) => {
                         &times;
                     </span>
                     <div class="columns">
-                        <img src={"http://localhost:3001/images/"+props.imagePath} alt="book" />
+                        <img src={"https://server-bookstore-28pn.onrender.com/images/"+props.imagePath} alt="book" />
                         <div id="dialog-content">
                             <h3>{props.name}</h3>
                             <p>By: {props.author}</p>
