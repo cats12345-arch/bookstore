@@ -27,7 +27,7 @@ const AddBook = (props) => {
         const formData = new FormData(event.target);
         console.log(...formData);
 
-        const response = await fetch("http://localhost:3001/api/bookshttps://server-bookstore-28pn.onrender.com/api/books", {
+        const response = await fetch("https://server-bookstore-28pn.onrender.com/api/books", {
             "method":"POST",
             "body":formData
         })
