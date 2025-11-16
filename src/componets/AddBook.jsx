@@ -64,7 +64,7 @@ const AddBook = (props) => {
                             <p className="right">
                                 <input type="text" id="name" name="name" required min="1"></input>
                                 <input type="text" id="author" name="author" min="1" required></input>
-                                <input type="number" id="price" name="price" min="0" required></input>
+                                <input type="number" step="0.01" id="price" name="price" min="0" required></input>
                                 <input type="text" id="releaseDate" name="releaseDate" min="1" required></input>
                                 <input type="text" id="description" name="description" min="1" required></input>
                                 <input type="hidden" id="newBook" name="newBook" value={newBook}></input>
