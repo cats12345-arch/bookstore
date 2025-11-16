@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/bookstore/static/css/main.754d34de.css",
-    "main.js": "/bookstore/static/js/main.7ca48808.js",
+    "main.css": "/bookstore/static/css/main.ecde26fc.css",
+    "main.js": "/bookstore/static/js/main.7faf6762.js",
     "static/media/homeBanner.jpg": "/bookstore/static/media/homeBanner.68b8831b871ba5a94e62.jpg",
     "static/media/woman.jpg": "/bookstore/static/media/woman.f12de2283f2dedc82103.jpg",
     "static/media/bookClub.jpg": "/bookstore/static/media/bookClub.0f8d36ef8607d98e4713.jpg",
@@ -13,11 +13,11 @@
     "static/media/book3.jpg": "/bookstore/static/media/book3.b2173a98b531f41b4324.jpg",
     "static/media/bookStore.webp": "/bookstore/static/media/bookStore.643320f58edc8307c751.webp",
     "index.html": "/bookstore/index.html",
-    "main.754d34de.css.map": "/bookstore/static/css/main.754d34de.css.map",
-    "main.7ca48808.js.map": "/bookstore/static/js/main.7ca48808.js.map"
+    "main.ecde26fc.css.map": "/bookstore/static/css/main.ecde26fc.css.map",
+    "main.7faf6762.js.map": "/bookstore/static/js/main.7faf6762.js.map"
   },
   "entrypoints": [
-    "static/css/main.754d34de.css",
-    "static/js/main.7ca48808.js"
+    "static/css/main.ecde26fc.css",
+    "static/js/main.7faf6762.js"
   ]
 }
