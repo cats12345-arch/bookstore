@@ -5,7 +5,7 @@ const Browse = () => {
         <div>
             <h1 className="BrowseHeader">Browse</h1>
             <div id="browse">
-                <BookListExtra num="10"/>
+                <BookListExtra num="15"/>
             </div>
         </div>
     );

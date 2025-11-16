@@ -1,0 +1,36 @@
+#add-property-form .seperate {
+    display: flex;
+    gap: 25px;
+}
+
+#add-property-form .left {
+    display: flex;
+    flex-direction: column;
+}
+
+#add-property-form label {
+    padding-bottom: 10px;
+}
+
+#add-property-form input {
+    margin-bottom: 4px;
+}
+
+#add-property-form .right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10px;
+}
+
+#popularBook {
+    margin-top: 12px;
+}
+
+#newBook {
+    margin-top: 8px;
+}
+
+#add-property-form .cols {
+    display: flex;
+}
