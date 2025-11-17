@@ -16,7 +16,7 @@ const BookListLess = (props) => {
    },[]);
 
     const displayPopular = (book) => {
-        if(book.popularBook || book.popularBook == "true") {
+        if(book.popularBook || book.popularBook === "true") {
             return (
                 <BookLess key={book.id}
                 id={book.id}
@@ -32,7 +32,7 @@ const BookListLess = (props) => {
     }
 
     const displayNew = (book) => {
-        if(book.newBook || book.popularBook == "true") {
+        if(book.newBook || book.popularBook === "true") {
             return (
                 <BookLess key={book.id}
                 id={book.id}

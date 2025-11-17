@@ -5,7 +5,7 @@ import BookListLess from "./../componets/BookListLess"
 const HotBooks = () => {
     return (
         <div>
-            <BookListLess num="10"/>
+            <BookListLess num="15"/>
         </div>
     );
 };
