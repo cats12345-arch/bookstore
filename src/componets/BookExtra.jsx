@@ -4,6 +4,8 @@ import BookDialog from "./BookDialog";
 
 const BookExtra = (props) => {
     const [showDialog, setShowDialog] = useState(false);
+    const [book, setBook] = useState(props);
+    const [showBook, setShowBook] = useState(true);
 
     const showBookDetails = () => {
         setShowDialog(true);
@@ -11,6 +13,14 @@ const BookExtra = (props) => {
 
     const closeBookDetails = () => {
         setShowDialog(false);
+    }
+
+    const updateBook = (book) => {
+        setBook(book);
+    }
+
+    const hideBook = () => {
+        setShowBook(false);
     }
 
     return (
@@ -24,7 +34,8 @@ const BookExtra = (props) => {
                 releaseDate = {props.releaseDate}
                 description = {props.description}/>
             ):("")}
-            <div id="book-extra" onClick={showBookDetails}>
+            {showBook?(
+                <div id="book-extra" onClick={showBookDetails}>
                 <div>
                     <img src={"https://server-bookstore-28pn.onrender.com/images/"+props.imagePath} alt="book" />
                 </div>
@@ -34,6 +45,7 @@ const BookExtra = (props) => {
                 <p>Release: {props.releaseDate}</p>
                 <p>{props.description}</p>
             </div>
+            ):("")}
         </>
     );
 };
