@@ -3,7 +3,7 @@ import "./../css/AddBook.css";
 
 const BookEditDialog = (props) => {
     const [result, setResult] = useState("");
-    const [prevSrc, setPrevSrc] = useState(`"https://server-bookstore-28pn.onrender.com/images/${props.imagePath}`);
+    const [prevSrc, setPrevSrc] = useState(`https://server-bookstore-28pn.onrender.com/images/${props.imagePath}`);
     const [popularbook, setPopularBook] = useState(false);
     const [newBook, setNewBook] = useState(false);
 
