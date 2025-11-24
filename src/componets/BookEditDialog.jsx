@@ -26,7 +26,7 @@ const BookEditDialog = (props) => {
         const formData = new FormData(e.target);
         console.log(...formData);
 
-        const response = await fetch(`http://localhost:3001/api/books/${props.id}`, {
+        const response = await fetch(`https://server-bookstore-28pn.onrender.com/api/books/${props.id}`, {
             method:"PUT",
             body:formData
         });

@@ -5,7 +5,7 @@ const BookDeleteDialog = (props) => {
     const [result, setResult] = useState("");
 
     const deleteBook = async() => {
-        const response = await fetch(`http://localhost:3001/api/books/${props.id}`, {
+        const response = await fetch(`https://server-bookstore-28pn.onrender.com/api/books/${props.id}`, {
             method:"DELETE"
         });
 
