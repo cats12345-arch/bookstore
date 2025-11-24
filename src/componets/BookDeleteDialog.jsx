@@ -11,7 +11,8 @@ const BookDeleteDialog = (props) => {
 
         if (response.status === 200) {
             setResult("Book has been delted");
-            //add later
+            props.closeBookDetails();
+            props.hideBook();
         } else {
             setResult("The book you tried to delete does not exist or I messed up somewhere");
         }
@@ -21,7 +22,7 @@ const BookDeleteDialog = (props) => {
         <div id="delete">
             <h1>Are you sure that you want to delete this book?</h1>
             <div>
-                <button>No</button>
+                <button onClick={props.closeBookDetails}>No</button>
                 <button onClick={deleteBook}>Yeah</button>
             </div>
             <span>{result}</span>

@@ -22,16 +22,11 @@ const BookDialog = (props) => {
         <div id="house-dialog" className="w3-modal">
             <div className="w3-modal-content">
                 <div className="w3-container">
-                    <span
-                        id="dialog-close"
-                        className="w3-button w3-display-topright"
-                        onClick={props.closeHouseDialog}
-                    >
-                        &times;
-                    </span>
                     <div id="house-dialog-content">
+
                         {showContent === "details" ? (
                             <BookDetailsDialog
+                                closeBookDetails={props.closeBookDetails}
                                 showEdit={showEdit}
                                 showDelete={showDelete}
                                 name={props.name}
@@ -47,15 +42,18 @@ const BookDialog = (props) => {
                                 author={props.author}
                                 price={props.price}
                                 releaseDate={props.releaseDate}
+                                newBook={props.newBook}
+                                popularBook={props.popularBook}
                                 imagePath={props.imagePath}
-                                description={props.description} 
+                                description={props.description}
+                                updateBook ={props.updateBook}
                                 closeBookDetails = {props.closeBookDetails} />
                         ):(
                             <BookDeleteDialog 
-                                id={props._id}
+                                id={props.id}
                                 name={props.name}
                                 closeBookDetails = {props.closeBookDetails}
-                                hideHouse={props.hideHouse} />
+                                hideBook={props.hideBook} />
                             )}
                         
                     </div>

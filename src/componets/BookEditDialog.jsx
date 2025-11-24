@@ -4,16 +4,26 @@ import "./../css/AddBook.css";
 const BookEditDialog = (props) => {
     const [result, setResult] = useState("");
     const [prevSrc, setPrevSrc] = useState(`http://localhost:3001/images/${props.imagePath}`);
+    const [popularbook, setPopularBook] = useState(false);
+    const [newBook, setNewBook] = useState(false);
+
+    const changePopoularBook = () => {
+        setPopularBook(!popularbook);
+    }
+
+    const changeNewBook = () => {
+        setNewBook(!newBook);
+    }
 
     const uploadImage = (e) => {
-        setPrevSrc(URL.createObjectURL(e,EventTarget.files[0]));
+        setPrevSrc(URL.createObjectURL(e.target.files[0]));
     }
 
     const onSubmit = async(e) => {
         e.preventDefault();
         setResult("Sending");
 
-        const formData = new FormData(event.target);
+        const formData = new FormData(e.target);
         console.log(...formData);
 
         const response = await fetch(`http://localhost:3001/api/books/${props.id}`, {
@@ -24,8 +34,8 @@ const BookEditDialog = (props) => {
         if(response.status === 200) {
             setResult("Book updated successfully");
             e.target.reset();
-            //close dialog
-            //update stuff
+            props.updateBook(await response.json());
+            props.closeBookDetails();
         } else {
             setResult("Error editing the book");
         }
@@ -35,7 +45,7 @@ const BookEditDialog = (props) => {
         <div id="add-dialog" className="w3-modal">
             <div className="w3-modal-content">
                 <div className="w3-container">
-                    <span id="dialog-close" className="w3-button w3-display-topright" onClick={props.closeAddDialog}>&times;</span>
+                    <span id="dialog-close" className="w3-button w3-display-topright" onClick={props.closeBookDetails}>&times;</span>
                     <form id="add-property-form" onSubmit={onSubmit}>
                         <h3>Edit Book</h3>
 
@@ -88,3 +98,5 @@ const BookEditDialog = (props) => {
         </div>
     )
 }
+
+export default BookEditDialog;

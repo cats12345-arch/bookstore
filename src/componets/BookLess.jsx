@@ -4,6 +4,8 @@ import BookDialog from "./BookDialog";
 
 const BookLess = (props) => {
     const [showDialog, setShowDialog] = useState(false);
+    const [book, setBook] = useState(props);
+    const [showBook, setShowBook] = useState(true);
 
     const showBookDetails = () => {
         setShowDialog(true);
@@ -13,10 +15,21 @@ const BookLess = (props) => {
         setShowDialog(false);
     }
 
+    const updateBook = (book) => {
+        setBook(book);
+    }
+
+    const hideBook = () => {
+        setShowBook(false);
+    }
+
     return (
         <>
             {showDialog?(
                 <BookDialog closeBookDetails={closeBookDetails}
+                hideBook = {hideBook}
+                updateBook = {updateBook}
+                id={props.id}
                 name={props.name}
                 imagePath = {props.imagePath}
                 author = {props.author}
@@ -24,13 +37,16 @@ const BookLess = (props) => {
                 releaseDate = {props.releaseDate}
                 description = {props.description}/>
             ):("")}
-            <div id="book-less" onClick={showBookDetails}>
-                <div>
-                    <img src={"https://server-bookstore-28pn.onrender.com/images/"+props.imagePath} alt="book" />
+            {showBook?(
+                <div id="book-less" onClick={showBookDetails}>
+                    <div>
+                        <img src={"https://server-bookstore-28pn.onrender.com/images/"+props.imagePath} alt="book" />
+                    </div>
+                    <h1>{props.name}</h1>
+                    <p>{props.description}</p>
                 </div>
-                <h1>{props.name}</h1>
-                <p>{props.description}</p>
-            </div>
+            ):("")}
+            
         </>
     );
 };

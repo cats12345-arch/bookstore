@@ -5,6 +5,8 @@ const BookDetailsDialog = (props) => {
         <div id="house-dialog" className="w3-modal">
             <div className="w3-modal-content">
                 <div className="w3-container">
+                    <span id="deleteButton" className="w3-button" onClick={props.showDelete}>&#9986;</span>
+                    <span id="editButton" className="w3-button" onClick={props.showEdit}>&#9998;</span>
                     <span
                         id="dialog-close"
                         className="w3-button w3-display-topright"
@@ -12,6 +14,7 @@ const BookDetailsDialog = (props) => {
                     >
                         &times;
                     </span>
+
                     <div class="columns">
                         <img src={"https://server-bookstore-28pn.onrender.com/images/"+props.imagePath} alt="book" />
                         <div id="dialog-content">

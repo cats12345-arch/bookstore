@@ -27,24 +27,27 @@ const BookExtra = (props) => {
         <>
             {showDialog?(
                 <BookDialog closeBookDetails={closeBookDetails}
-                name={props.name}
-                imagePath = {props.imagePath}
-                author = {props.author}
-                price = {props.price}
-                releaseDate = {props.releaseDate}
-                description = {props.description}/>
+                hideBook = {hideBook}
+                updateBook = {updateBook}
+                id={book.id}
+                name={book.name}
+                imagePath = {book.imagePath}
+                author = {book.author}
+                price = {book.price}
+                releaseDate = {book.releaseDate}
+                description = {book.description}/>
             ):("")}
             {showBook?(
                 <div id="book-extra" onClick={showBookDetails}>
-                <div>
-                    <img src={"https://server-bookstore-28pn.onrender.com/images/"+props.imagePath} alt="book" />
+                    <div>
+                        <img src={"https://server-bookstore-28pn.onrender.com/images/"+book.imagePath} alt="book" />
+                    </div>
+                    <h1>{book.name}</h1>
+                    <h1>{book.author}</h1>
+                    <p>Price: {book.price}</p>
+                    <p>Release: {book.releaseDate}</p>
+                    <p>{book.description}</p>
                 </div>
-                <h1>{props.name}</h1>
-                <h1>{props.author}</h1>
-                <p>Price: {props.price}</p>
-                <p>Release: {props.releaseDate}</p>
-                <p>{props.description}</p>
-            </div>
             ):("")}
         </>
     );

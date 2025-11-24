@@ -27,6 +27,8 @@ const BookList = (props) => {
             setBooks(response.data.splice(0,props.num));
         };
 
+        console.log(...books);
+
         loadBooks();
    },[]);
 
